@@ -1,109 +1,185 @@
-import "./App.css";
+import React from "react";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Div principal azul (parte superior) */}
-      <div className="bg-blue-500 flex-1 text-white py-16">
-        <h1 className="text-4xl font-bold text-center">
-          Bienvenido a Nuestra Landing Page
-        </h1>
+  <div className="h-screen flex flex-col">
+    {/* Color 1 (Azul) */}
+    <div className="flex-1 bg-gradient-to-tr from-cyan-400 via-blue-200 to-blue-800 to-purple-600"></div>
 
-        {/* Barra de búsqueda y lista (lado izquierdo y derecho) */}
+    {/* Color 2 (Gris) */}
+    <div className="flex-1 bg-gray-200"></div>
 
-        <div className="bg-blue-500 py-4">
-          <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-4 lg:px-8">
-            {/* Lista no ordenada (ul) en el lado izquierdo */}
-            <nav className="mb-4 lg:mb-0">
-              <ul className="flex space-x-4">
+    {/* Div Central Superpuesto */}
+    <div className="absolute inset-0 flex flex-col justify-center items-center">
+      {/* Div que engloba título, nav, barra y ambos divs */}
+      <div className="w-11/12 h-4/5 bg-transparent relative mt-[-100px]">
+        {/* Título en el lado izquierdo superior */}
+        <div className="absolute top-4 left-0 bg-transparent">
+          <h1 className="text-4xl text-left bg-transparent">
+            <span style={{ color: "black" }}>LOREM</span>
+            <span style={{ color: "gray" }}>IPSUM</span>
+          </h1>
+        </div>
+
+        {/* Barra de búsqueda a la altura del título y en el lado derecho */}
+        <div className="absolute top-4 right-0 bg-transparent">
+          <input
+            type="text"
+            placeholder="SEARCH"
+            style={{
+              width: "400px",
+              backgroundColor: "transparent",
+              color: "blue",
+            }}
+            className="p-2 pl-8 pr-4 border rounded-lg bg-transparent"
+          />
+        </div>
+
+        {/* Nav debajo del título y del lado izquierdo */}
+        <div className="absolute top-20 left-0 bg-transparent">
+          <nav>
+            <ul className="flex space-x-4 bg-transparent">
                 <li>
-                  <a href="#">Inicio</a>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:text-blue-500 hover:underline bg-transparent"
+                  >
+                    HOME
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Acerca de</a>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:text-blue-500 hover:underline bg-transparent"
+                  >
+                    SERVICES
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Servicios</a>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:text-blue-500 hover:underline bg-transparent"
+                  >
+                    BOOK
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Contacto</a>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:text-blue-500 hover:underline bg-transparent"
+                  >
+                    ABOUT US
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:text-blue-500 hover:underline bg-transparent"
+                  >
+                    CONTACT US
+                  </a>
                 </li>
               </ul>
             </nav>
+          </div>
 
-            {/* Barra de búsqueda en el lado derecho */}
-            <div className="flex items-center">
-              <input
-                type="text"
-                placeholder="Buscar..."
-                className="w-full lg:w-48 px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-              />
+          {/* Nuevo div que engloba a los dos divs */}
+          <div className="absolute top-32 left-0 w-full flex h-full">
+            {/* Primer div debajo del nav */}
+            <div className="w-1/2 h-1/2 bg-gray-50 p-5">
+              {/* Contenido del primer div */}
+              <div>
+                <h2 className="text-2xl text-left mt-4">MAKE AN APPOINTMENT</h2>
+                <p className="text-xl">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book.
+                </p>
+              </div>
+              <div className="mt-4">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                  Botón 1
+                </button>
+                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                  Botón 2
+                </button>
+              </div>
+              {/* Contenedor de imágenes debajo de los botones */}
+              <div className="mt-4 flex justify-between">
+                {/* Imagen 1 */}
+                <div className="text-center">
+                  <img
+                    src="ruta_imagen_1.jpg"
+                    alt="Descripción de la imagen 1"
+                    className="max-h-10"
+                  />
+                  <p>Descripción 1</p>
+                </div>
+                {/* Imagen 2 */}
+                <div className="text-center">
+                  <img
+                    src="ruta_imagen_2.jpg"
+                    alt="Descripción de la imagen 2"
+                    className="max-h-10"
+                  />
+                  <p>Descripción 2</p>
+                </div>
+                {/* Imagen 3 */}
+                <div className="text-center">
+                  <img
+                    src="ruta_imagen_3.jpg"
+                    alt="Descripción de la imagen 3"
+                    className="max-h-10"
+                  />
+                  <p>Descripción 3</p>
+                </div>
+                {/* Imagen 4 */}
+                <div className="text-center">
+                  <img
+                    src="ruta_imagen_4.jpg"
+                    alt="Descripción de la imagen 4"
+                    className="max-h-10"
+                  />
+                  <p>Descripción 4</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Segundo div debajo del nav */}
+            <div className="w-1/2 h-1/2 bg-gray-50">
+              {/* Contenido del segundo div */}
+              <h2 className="text-2xl text-center mt-4">IT'S QUICK & EASY</h2>
+              <div className="flex justify-center items-center h-full bg-gradient-to-tr from-cyan-400 via-blue-200 to-blue-800 to-purple-600">
+                <form>
+                  <h2 className="text-2xl text-">IT'S QUICK & EASY</h2>
+                  <label htmlFor="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" />
+                  <br />
+
+                  <label htmlFor="apellido">Apellido:</label>
+                  <input type="text" id="apellido" name="apellido" />
+                  <br />
+
+                  <label htmlFor="contacto">Contacto:</label>
+                  <input type="text" id="contacto" name="contacto" />
+                  <br />
+
+                  <label htmlFor="mensaje">Mensaje:</label>
+                  <textarea id="mensaje" name="mensaje" />
+                  <br />
+
+                  <button
+                    type="submit"
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Enviar
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Div principal gris (parte inferior) */}
-      <div className="bg-gray-200 flex-1 py-16">
-        {/* Div en medio con ancho y altura específicos */}
-        <div className="bg-gray-100 lg:w-3/4 mx-auto my-8 p-4 lg:p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4">Título del Contenido</h2>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            fringilla euismod lectus.
-          </p>
-          <div className="mt-4 flex justify-center lg:justify-start">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mr-2">
-              Botón 1
-            </button>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              Botón 2
-            </button>
-          </div>
-
-          {/* FORMULARIO DE CONTACTO */}
-          <div className="bg-gray-100 p-4 lg:p-8 rounded-lg shadow-md lg:relative lg:right-[-400px] lg:top-[-90px] lg:w-64">
-  <h2 className="text-lg lg:text-base font-semibold mb-2 lg:mb-1">
-    Formulario de Contacto
-  </h2>
-  <form className="mt-8">
-    <h3 className="text-lg font-semibold mb-2">Formulario de Contacto</h3>
-    <div className="mb-4">
-      <input
-        type="text"
-        placeholder="Nombre"
-        className="w-full lg:w-48 px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-      />
-    </div>
-    <div className="mb-4">
-      <input
-        type="text"
-        placeholder="Apellido"
-        className="w-full lg:w-48 px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-      />
-    </div>
-    <div className="mb-4">
-      <input
-        type="text"
-        placeholder="Contacto"
-        className="w-full lg:w-48 px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-      />
-    </div>
-    <div className="mb-4">
-      <textarea
-        placeholder="Mensaje"
-        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-      />
-    </div>
-    <button
-      type="submit"
-      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-    >
-      Enviar
-    </button>
-  </form>
-</div>
-          {/* Contenido de la parte inferior */}
         </div>
       </div>
     </div>
