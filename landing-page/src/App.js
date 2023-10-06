@@ -89,7 +89,9 @@ function App() {
             <div className="w-1/2 h-1/2 bg-gray-50 p-5">
               {/* Contenido del primer div */}
               <div>
-                <h2 className="text-2xl text-left mt-4 text-stone-500">MAKE AN <p className="text-black font-bold">APPOINTMENT</p></h2>
+                <h2 className="text-2xl text-left mt-4 text-stone-500">
+                  MAKE AN <p className="text-black font-bold">APPOINTMENT</p>
+                </h2>
                 <p className="text-xl">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -106,45 +108,6 @@ function App() {
                   Botón 2
                 </button>
               </div>
-              {/* Contenedor de imágenes debajo de los botones */}
-              <div className="mt-4 flex justify-between">
-                {/* Imagen 1 */}
-                <div className="text-center">
-                  <img
-                    src="ruta_imagen_1.jpg"
-                    alt="Descripción de la imagen 1"
-                    className="max-h-10"
-                  />
-                  <p>Descripción 1</p>
-                </div>
-                {/* Imagen 2 */}
-                <div className="text-center">
-                  <img
-                    src="ruta_imagen_2.jpg"
-                    alt="Descripción de la imagen 2"
-                    className="max-h-10"
-                  />
-                  <p>Descripción 2</p>
-                </div>
-                {/* Imagen 3 */}
-                <div className="text-center">
-                  <img
-                    src="ruta_imagen_3.jpg"
-                    alt="Descripción de la imagen 3"
-                    className="max-h-10"
-                  />
-                  <p>Descripción 3</p>
-                </div>
-                {/* Imagen 4 */}
-                <div className="text-center">
-                  <img
-                    src="ruta_imagen_4.jpg"
-                    alt="Descripción de la imagen 4"
-                    className="max-h-10"
-                  />
-                  <p>Descripción 4</p>
-                </div>
-              </div>
             </div>
 
             {/* Segundo div debajo del nav */}
@@ -153,7 +116,9 @@ function App() {
               <h2 className="text-2xl text-center mt-4">IT'S QUICK & EASY</h2>
               <div className="flex justify-center items-center h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
                 <form className="w-full h-full p-4 flex flex-col">
-                  <h2 className="text-2xl text-center text-white">IT'S QUICK & EASY</h2>
+                  <h2 className="text-2xl text-center text-white">
+                    IT'S QUICK & EASY
+                  </h2>
 
                   {/* Nombre y Apellido en la misma fila */}
                   <div className="mb-2 flex">
@@ -211,6 +176,43 @@ function App() {
                     Enviar
                   </button>
                 </form>
+              </div>
+            </div>
+            {/* Div con imágenes y títulos debajo del segundo div */}
+            <div className="absolute top-2/4 flex justify-between space-x-8">
+              {/* Primera imagen con título */}
+              <div className="w-1/4 bg-transparent p-6 rounded-lg shadow-lg text-center">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/010/150/760/non_2x/calendar-icon-sign-symbol-design-free-png.png"
+                  alt="Mi Imagen 1"
+                  className="w-full h-auto max-h-32"
+                />
+                <h3 className="text-lg mt-4">Título 1</h3>
+              </div>
+              {/* Otras imágenes con títulos */}
+              <div className="w-1/4 bg-transparent p-6 rounded-lg shadow-lg text-center">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1097/PNG/512/1485477162-clock_78594.png"
+                  alt="Mi Imagen 2"
+                  className="w-full h-auto max-h-32"
+                />
+                <h3 className="text-lg mt-4">Título 2</h3>
+              </div>
+              <div className="w-1/4 bg-transparent p-6 rounded-lg shadow-lg text-center">
+                <img
+                  src="https://images.vexels.com/media/users/3/218910/isolated/preview/ba5249cdecc621a585f000977a1b0f78-icono-de-trazo-de-lista-de-configuraci-n.png"
+                  alt="Mi Imagen 3"
+                  className="w-full h-auto max-h-32"
+                />
+                <h3 className="text-lg mt-4">Título 3</h3>
+              </div>
+              <div className="w-1/4 bg-transparent p-6 rounded-lg shadow-lg text-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Google_Messages_logo.svg/240px-Google_Messages_logo.svg.png"
+                  alt="Mi Imagen 4"
+                  className="w-full h-auto max-h-32"
+                />
+                <h3 className="text-lg mt-4">Título 4</h3>
               </div>
             </div>
           </div>
