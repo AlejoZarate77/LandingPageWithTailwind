@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="h-screen flex flex-col">
       {/* Color 1 (Azul) */}
-      <div className="flex-1 bg-gradient-to-tr from-cyan-400 via-blue-400  to-blue-800 to-purple-600"></div>
+      <div className="flex-1 bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600"></div>
 
       {/* Color 2 (Gris) */}
       <div className="flex-1 bg-gray-200"></div>
@@ -118,7 +118,6 @@ function App() {
             {/* Segundo div debajo del nav */}
             <div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
               {/* Contenido del segundo div */}
-
               <div className="flex justify-center items-center max-w-2xl h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
                 <form className="w-full h-full p-4 flex flex-col">
                   <h2 className="text-2xl text-center text-white">
@@ -127,7 +126,7 @@ function App() {
 
                   {/* Nombre y Apellido en la misma fila */}
                   <div className="mb-2 flex">
-                    <div className="w-1/2">
+                    <div className="w-1/2 flex flex-col">
                       <label htmlFor="nombre" className="text-xs">
                         Nombre:
                       </label>
@@ -135,10 +134,10 @@ function App() {
                         type="text"
                         id="nombre"
                         name="nombre"
-                        className="border p-2 w-full text-xs"
+                        className="border p-2 w-full text-xs flex-grow"
                       />
                     </div>
-                    <div className="w-1/2 ml-2">
+                    <div className="w-1/2 ml-2 flex flex-col">
                       <label htmlFor="apellido" className="text-xs">
                         Apellido:
                       </label>
@@ -146,7 +145,7 @@ function App() {
                         type="text"
                         id="apellido"
                         name="apellido"
-                        className="border p-2 w-full text-xs"
+                        className="border p-2 w-full text-xs flex-grow"
                       />
                     </div>
                   </div>
@@ -179,6 +178,12 @@ function App() {
                     className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs"
                   >
                     Enviar
+                  </button>
+                  {/* Agregar el segundo botón */}
+                  <button
+                    className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-2 text-xs"
+                  >
+                    Segundo Botón
                   </button>
                 </form>
               </div>
