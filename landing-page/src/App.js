@@ -116,7 +116,7 @@ function App() {
             </div>
 
             {/* Segundo div debajo del nav */}
-            <div className="w-1/2 h-full bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
+            <div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
               {/* Contenido del segundo div */}
 
               <div className="flex justify-center items-center max-w-2xl h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
