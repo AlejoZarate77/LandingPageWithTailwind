@@ -86,17 +86,17 @@ function App() {
           {/* Nuevo div que engloba a los dos divs */}
           <div className="absolute top-32 left-0 w-full flex h-full">
             {/* Primer div debajo del nav */}
-            <div className="w-1/2 h-1/2 bg-gradient-to-t from-gray-100 to-gray-50  p-5">
+            <div className="w-1/2 h-1/2 bg-gradient-to-t from-gray-100 to-gray-50 p-5">
               {/* Contenido del primer div */}
               <div>
-                <h2 className="text-2xl text-left mt-4 text-stone-500">
+                <h2 className="text-4xl text-left mt-4 text-stone-500">
                   MAKE AN <p className="text-black font-bold">APPOINTMENT</p>
                 </h2>
-                <p className="text-xl">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
+                <p className="text-sm">
+                  Lorem Ipsum is simply of the printing and
+                  typesetting industry. Lorem Ipsum has <p>been the industry's
+                  standard dummy text ever 0s, when an unknown</p>
+                  printer took  and scrambled it to make a type
                   specimen book.
                 </p>
               </div>
@@ -113,7 +113,7 @@ function App() {
             {/* Segundo div debajo del nav */}
             <div className="w-1/2 h-full bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
               {/* Contenido del segundo div */}
-              <h2 className="text-2xl text-center mt-4"></h2>
+              
               <div className="flex justify-center items-center max-w-2xl h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
                 <form className="w-full h-full p-4 flex flex-col">
                   <h2 className="text-2xl text-center text-white">
