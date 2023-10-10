@@ -86,7 +86,7 @@ function App() {
           {/* Nuevo div que engloba a los dos divs */}
           <div className="absolute top-32 left-0 w-full flex h-full">
             {/* Primer div debajo del nav */}
-            <div className="w-1/2 h-1/2 bg-gradient-to-t from-gray-100 to-gray-50 p-5">
+            <div className="w-1/2 h-1/2 bg-gray-100 p-5">
               {/* Contenido del primer div */}
               <div>
                 <p className="text-4xl text-left mt-8 mb-2 ml-8 text-stone-500">
@@ -116,9 +116,9 @@ function App() {
             </div>
 
             {/* Segundo div debajo del nav */}
-            <div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
+            <div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-100 to-gray-100 to-gray-100 p-5">
               {/* Contenido del segundo div */}
-              <div className="flex justify-center items-center max-w-2xl h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
+              <div className="flex justify-center items-center max-w-2xl h-full ml-20 bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
                 <form className="w-full h-full p-4 flex flex-col space-y-4">
                   <h2 className="text-2xl text-center text-white">
                     IT'S QUICK & EASY
