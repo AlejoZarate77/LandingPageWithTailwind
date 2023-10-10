@@ -116,73 +116,70 @@ function App() {
             </div>
 
             {/* Segundo div debajo del nav */}
-<div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
-  {/* Contenido del segundo div */}
-  <div className="flex justify-center items-center max-w-2xl h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
-    <form className="w-full p-4">
-      <div className="flex flex-col space-y-4">
-        <h2 className="text-2xl text-center text-white">
-          IT'S QUICK & EASY
-        </h2>
+            <div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-200 to-gray-50 to-gray-50 p-5">
+              {/* Contenido del segundo div */}
+              <div className="flex justify-center items-center max-w-2xl h-full bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
+                <form className="w-full h-full p-4 flex flex-col space-y-4">
+                  <h2 className="text-2xl text-center text-white">
+                    IT'S QUICK & EASY
+                  </h2>
 
-        {/* Nombre y Apellido en la misma fila */}
-        <div className="mb-4 flex flex-col sm:flex-row sm:space-x-4">
-          <div className="w-full sm:w-1/2 flex flex-col">
-            <input
-              placeholder="NOMBRE:"
-              type="text"
-              id="nombre"
-              name="nombre"
-              className="border p-2 w-full text-xs"
-            />
-          </div>
-          <div className="w-full sm:w-1/2 flex flex-col">
-            <input
-              placeholder="APELLIDO:"
-              type="text"
-              id="apellido"
-              name="apellido"
-              className="border p-2 w-full text-xs"
-            />
-          </div>
-        </div>
+                  {/* Nombre y Apellido en la misma fila */}
+                  <div className="mb-4 flex flex-col sm:flex-row sm:space-x-4">
+                    <div className="w-full sm:w-1/2 flex flex-col">
+                      <input
+                        placeholder="NOMBRE:"
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        className="border p-2 w-full text-xs"
+                      />
+                    </div>
+                    <div className="w-full sm:w-1/2 flex flex-col">
+                      <input
+                        placeholder="APELLIDO:"
+                        type="text"
+                        id="apellido"
+                        name="apellido"
+                        className="border p-2 w-full text-xs"
+                      />
+                    </div>
+                  </div>
 
-        <div className="mb-4">
-          <input
-            placeholder="CONTACTO:"
-            type="text"
-            id="contacto"
-            name="contacto"
-            className="border p-2 w-full text-xs"
-          />
-        </div>
+                  <div className="mb-4">
+                    <input
+                      placeholder="CONTACTO:"
+                      type="text"
+                      id="contacto"
+                      name="contacto"
+                      className="border p-2 w-full text-xs"
+                    />
+                  </div>
 
-        <div className="mb-4">
-          <textarea
-            placeholder="MENSAJE:"
-            id="mensaje"
-            name="mensaje"
-            className="border p-2 w-full text-xs"
-          ></textarea>
-        </div>
+                  <div className="mb-4">
+                    <textarea
+                      placeholder="MENSAJE:"
+                      id="mensaje"
+                      name="mensaje"
+                      className="border p-2 w-full text-xs"
+                    ></textarea>
+                  </div>
 
-        <div className="flex justify-center space-x-4">
-          <button
-            type="submit"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs w-full"
-          >
-            Enviar
-          </button>
-          {/* Agregar el segundo botón */}
-          <button className="bg-white border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white font-bold py-2 px-4 rounded text-xs w-full">
-            Segundo Botón
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
-
+                  <div className="flex justify-center space-x-4">
+                    <button
+                      type="submit"
+                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-xs w-full"
+                    >
+                      Enviar
+                    </button>
+                    {/* Agregar el segundo botón */}
+                    <button className="bg-white border border-blue-500 hover:bg-blue-500 text-blue-500 hover:text-white font-bold py-2 px-4 rounded text-xs w-full">
+                      Segundo Botón
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
 
             {/* Div con imágenes y títulos debajo del segundo div */}
             <div className="absolute top-2/4 flex justify-between space-x-8">
