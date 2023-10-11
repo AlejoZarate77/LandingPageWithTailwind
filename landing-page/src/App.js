@@ -1,4 +1,5 @@
 import React from "react";
+import "font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (
@@ -22,19 +23,28 @@ function App() {
           </div>
 
           {/* Barra de búsqueda a la altura del título y en el lado derecho */}
-          <div className="absolute top-4 right-0 bg-transparent">
-            <input
-              type="text"
-              placeholder="SEARCH"
-              style={{
-                width: "400px",
-                backgroundColor: "transparent",
-                color: "blue",
-              }}
-              className="p-2 pl-8 pr-4 border rounded-lg bg-transparent"
-            />
+          <div>
+            <div className="absolute top-4 right-0 bg-transparent">
+              <div style={{ position: "relative" }}>
+                <input
+                  type="text"
+                  placeholder="SEARCH"
+                  style={{
+                    width: "400px",
+                    backgroundColor: "transparent",
+                    color: "blue",
+                    paddingRight: "30px", // Añadir espacio para el icono a la derecha
+                  }}
+                  className="p-2 pl-4 border rounded-lg bg-transparent"
+                />
+                <i
+                  className="fa fa-search absolute right-3 top-3"
+                  style={{ color: "lightgray" }}
+                ></i>
+              </div>
+            </div>
           </div>
-
+          
           {/* Nav debajo del título y del lado izquierdo */}
           <div className="absolute top-20 left-0 bg-transparent">
             <nav>
