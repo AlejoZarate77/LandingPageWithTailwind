@@ -44,7 +44,7 @@ function App() {
               </div>
             </div>
           </div>
-          
+
           {/* Nav debajo del título y del lado izquierdo */}
           <div className="absolute top-20 left-0 bg-transparent">
             <nav>
@@ -94,9 +94,10 @@ function App() {
           </div>
 
           {/* Nuevo div que engloba a los dos divs */}
-          <div className="absolute top-32 left-0 w-full flex h-full">
+          <div className="absolute top-32 left-0 w-full flex h-full bg-gradient-to-b from-white via-gray-50 to-gray-200">
             {/* Primer div debajo del nav */}
-            <div className="w-1/2 h-1/2 bg-gray-100 p-5">
+
+            <div className="w-1/2 h-1/2 p-5"> {/*bg-gradient-to-b from-gray-100 via-gray-100 to-gray-200 to-gray-200  p-5"*/}
               {/* Contenido del primer div */}
               <div>
                 <p className="text-4xl text-left mt-8 mb-2 ml-8 text-stone-500">
@@ -111,7 +112,7 @@ function App() {
                   <p>
                     been the industry's standard dummy text ever 0s, when an
                     unknown
-                  </p>{" "}
+                  </p>
                   printer took and scrambled it to make a type specimen book.
                 </p>
               </div>
@@ -126,7 +127,7 @@ function App() {
             </div>
 
             {/* Segundo div debajo del nav */}
-            <div className="w-1/2 h-3/4 bg-gradient-to-t from-gray-200 via-gray-100 to-gray-100 to-gray-100 p-5">
+            <div className="w-1/2 h-3/4 p-10"> {/*bg-gradient-to-t from-gray-200 via-gray-100 to-gray-100 to-gray-100 p-5">*/}
               {/* Contenido del segundo div */}
               <div className="flex justify-center items-center max-w-2xl h-full ml-20 bg-gradient-to-tr from-cyan-400 via-blue-400 to-blue-800 to-purple-600">
                 <form className="w-full h-full p-4 flex flex-col space-y-6">
@@ -188,9 +189,9 @@ function App() {
             </div>
 
             {/* Div con imágenes y títulos debajo del segundo div */}
-            <div className="absolute top-2/4 flex justify-between space-x-8">
+            <div className="absolute top-2/4 flex justify-center space-x-8 pl-8">
               {/* Primera imagen con título */}
-              <div className="w-1/4 bg-transparent p-6 rounded-lg  text-center">
+              <div className="w-1/4 bg-transparent p-6 rounded-lg text-center">
                 <img
                   src="https://static.vecteezy.com/system/resources/previews/010/150/760/non_2x/calendar-icon-sign-symbol-design-free-png.png"
                   alt="Mi Imagen 1"
@@ -199,7 +200,7 @@ function App() {
                 <h3 className="text-xs mt-4">CLICK HERE</h3>
               </div>
               {/* Otras imágenes con títulos */}
-              <div className="w-1/4 bg-transparent p-6 rounded-lg  text-center">
+              <div className="w-1/4 bg-transparent p-6 rounded-lg text-center">
                 <img
                   src="https://cdn.icon-icons.com/icons2/1097/PNG/512/1485477162-clock_78594.png"
                   alt="Mi Imagen 2"
@@ -207,7 +208,7 @@ function App() {
                 />
                 <h3 className="text-xs mt-4">CLICK HERE</h3>
               </div>
-              <div className="w-1/4 bg-transparent p-6 rounded-lg  text-center">
+              <div className="w-1/4 bg-transparent p-6 rounded-lg text-center">
                 <img
                   src="https://images.vexels.com/media/users/3/218910/isolated/preview/ba5249cdecc621a585f000977a1b0f78-icono-de-trazo-de-lista-de-configuraci-n.png"
                   alt="Mi Imagen 3"
