@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importa Link
 
 function Nav() {
   return (
@@ -6,44 +7,44 @@ function Nav() {
       <nav>
         <ul className="flex space-x-4 bg-transparent">
           <li>
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-gray-50 hover:text-blue-500 hover:underline bg-transparent"
             >
               HOME
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/services"
               className="text-gray-50 hover:text-blue-500 hover:underline bg-transparent"
             >
               SERVICES
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/book"
               className="text-gray-50 hover:text-blue-500 hover:underline bg-transparent"
             >
               BOOK
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/about"
               className="text-gray-50 hover:text-blue-500 hover:underline bg-transparent"
             >
               ABOUT US
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="text-gray-50 hover:text-blue-500 hover:underline bg-transparent"
             >
               CONTACT US
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
