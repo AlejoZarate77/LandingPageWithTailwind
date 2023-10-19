@@ -55,34 +55,46 @@ function BookSection() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="w-1/2 p-2">
-        <img
-          src={currentProduct ? currentProduct.image : ""}
-          alt={currentProduct ? currentProduct.name : ""}
-          className="w-full h-96 object-cover rounded-lg transition transform hover:scale-105"
-        />
-      </div>
-      <div className="w-1/2 p-2">
-        <div className="w-56 sm:w-64">
-          <div className="bg-white rounded-lg p-4 border border-gray-300">
-            <h3 className="text-lg font-bold mb-2">
-              {currentProduct ? currentProduct.name : ""}
-            </h3>
-            <p className="text-sm mb-2">
-              {currentProduct ? currentProduct.description : ""}
-            </p>
-            <h3 className="text-lg font-semibold mb-2">
-              {currentProduct ? currentProduct.price : ""}
-            </h3>
-          </div>
+      <div className="flex items-center bg-orange-50"> {/* Contenedor para centrar */}
+        
+        {/* Contenido encima de la galería */}
+        <div className="mb-4 text-center">
+          <h1 className="text-3xl font-bold mb-4">Galería de Perfumes</h1>
+          <p className="text-lg mb-4">
+            Descubre nuestra colección de perfumes exclusivos. ¡Explora y elige tu fragancia favorita!
+          </p>
+          <a href="/otra-pagina" className="text-blue-500 hover:underline">Ver más productos</a>
         </div>
-        <div className="arrow-buttons">
-          <button onClick={prevImage} className="bg-blue-500 text-white rounded-lg p-2 mr-2 hover:bg-blue-700">
-            {"<"} Anterior
-          </button>
-          <button onClick={nextImage} className="bg-blue-500 text-white rounded-lg p-2 hover:bg-blue-700">
-            Siguiente {">"}
-          </button>
+        
+        <div className="w-1/2 p-2">
+          <img
+            src={currentProduct ? currentProduct.image : ""}
+            alt={currentProduct ? currentProduct.name : ""}
+            className="w-full h-96 object-cover rounded-lg transition transform hover:scale-105"
+          />
+        </div>
+        <div className="w-1/2 p-2">
+          <div className="w-56 sm:w-64">
+            <div className="bg-white rounded-lg p-4 border border-gray-300">
+              <h3 className="text-lg font-bold mb-2">
+                {currentProduct ? currentProduct.name : ""}
+              </h3>
+              <p className="text-sm mb-2">
+                {currentProduct ? currentProduct.description : ""}
+              </p>
+              <h3 className="text-lg font-semibold mb-2">
+                {currentProduct ? currentProduct.price : ""}
+              </h3>
+            </div>
+          </div>
+          <div className="arrow-buttons">
+            <button onClick={prevImage} className="bg-blue-500 text-white rounded-lg p-2 mr-2 hover:bg-blue-700">
+              {"<"} Anterior
+            </button>
+            <button onClick={nextImage} className="bg-blue-500 text-white rounded-lg p-2 hover:bg-blue-700">
+              Siguiente {">"}
+            </button>
+          </div>
         </div>
       </div>
     </div>
