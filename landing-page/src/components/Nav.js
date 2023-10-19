@@ -19,7 +19,7 @@ function Nav() {
               to="/services"
               className="text-gray-50 hover:text-blue-500 hover:underline bg-transparent"
             >
-              SERVICES
+              PRODUCTS
             </Link>
           </li>
           <li>
