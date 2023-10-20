@@ -24,7 +24,7 @@ function AboutUsSection() {
     // Cambiar la imagen cada 5 segundos
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
@@ -43,11 +43,15 @@ function AboutUsSection() {
       </h2>
       <div className="flex flex-col md:flex-row md:space-x-8">
         <div className="w-full md:w-1/2">
-          <img
-            src={images[currentImageIndex]}
-            alt="About Us"
-            className="w-full rounded-lg shadow-lg"
-          />
+          <div className="w-full h-72 rounded-lg shadow-lg overflow-hidden">
+            <a href={images[currentImageIndex]} target="_blank" rel="noopener noreferrer">
+              <img
+                src={images[currentImageIndex]}
+                alt="About Us"
+                className="w-full h-full object-fit-cover"
+              />
+            </a>
+          </div>
         </div>
         <div className="w-full md:w-1/2 mt-4 md:mt-0">
           <p className="text-gray-700 text-lg leading-loose">
