@@ -1,31 +1,26 @@
-import React from 'react';
+import React from "react";
 
-function AboutUs() {
+function AboutUsSection() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      {/* Ajusta las clases para aumentar el ancho y la altura del contenedor */}
-      <div className="bg-white p-8 rounded-lg shadow-md max-w-2xl mx-auto w-full h-full">
-        <div className="flex flex-col md:flex-row items-center md:items-start">
-          <div className="md:w-1/2 md:pr-4">
-            <img
-              src="tu_imagen_grande.jpg"
-              alt="Imagen de About Us"
-              className="w-full h-auto"
-            />
-          </div>
-          <div className="md:w-1/2 md:pl-4 text-center md:text-left">
-            <h2 className="text-2xl font-bold mb-4">Acerca de Nosotros</h2>
-            <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              lacinia justo et justo fringilla, id aliquam dui fermentum. Sed non
-              tristique orci. Nulla facilisi. Cras eu facilisis metus, vel
-              venenatis nulla.
-            </p>
-          </div>
+    <section className="h-auto p-8 flex flex-col justify-center items-center bg-gray-100">
+      <h2 className="text-3xl font-bold mb-4">About Us</h2>
+      <div className="flex flex-col md:flex-row md:space-x-8">
+        <div className="w-full md:w-1/2">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/los-mejores-perfumes-de-oton-o-para-hombre-esquire-1604414321.jpg" // Reemplaza con la ruta de tu imagen
+            alt="About Us"
+            className="w-full rounded-lg shadow-lg"
+          />
+        </div>
+        <div className="w-full md:w-1/2 mt-4 md:mt-0">
+          <p className="text-gray-700 text-lg">
+            Inserta aquí tu descripción sobre tu empresa o proyecto. Puedes
+            contar la historia, la misión, los valores, etc.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default AboutUs;
+export default AboutUsSection;
