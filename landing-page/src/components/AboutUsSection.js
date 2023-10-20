@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../css/AboutUsSection.css";
 
 function AboutUsSection() {
@@ -10,11 +9,26 @@ function AboutUsSection() {
     alignItems: "center",
   };
 
+  const images = [
+    "https://www.instyle.com/thmb/tKmagi6LkbUratBg4OYt2r60ASA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/022822-spring-perfume-quiz-question-lead-2000-a165ec70588c4a7ca98bb627fa842670.jpg",
+    "https://cdn.thomasnet.com/insights-images/embedded-images/65f03090-bc18-42c8-bd5a-1ab6cea99200/02167a88-06e3-47ad-97d2-6ba10b049713/FullHD/perfume-top-suppliers.jpg",
+    "https://i.ytimg.com/vi/AMlZjs17A-A/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA30NPD1A_JmQFYlgEBkg2OXJ6dKwg",
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Agregar una animación de entrada cuando la sección es visible
     setIsVisible(true);
+
+    // Cambiar la imagen cada 5 segundos
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (
@@ -25,12 +39,12 @@ function AboutUsSection() {
       }`}
     >
       <h2 className="text-4xl font-bold mb-6 text-center">
-        Bienvenidos a Nuestra Historia
+        ABOUT US
       </h2>
       <div className="flex flex-col md:flex-row md:space-x-8">
         <div className="w-full md:w-1/2">
           <img
-            src="https://hips.hearstapps.com/hmg-prod/images/los-mejores-perfumes-de-oton-o-para-hombre-esquire-1604414321.jpg"
+            src={images[currentImageIndex]}
             alt="About Us"
             className="w-full rounded-lg shadow-lg"
           />
