@@ -3,7 +3,7 @@ import React from 'react';
 const ContactUsSection = () => {
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="border rounded-lg p-4 max-w-xl w-full flex">
+      <div className="border rounded-lg p-4 max-w-screen-xl w-full flex">
         <form className="flex-1 bg-white shadow-md rounded p-8">
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
@@ -62,7 +62,7 @@ const ContactUsSection = () => {
           <img
             src="https://cdn.shopify.com/s/files/1/0451/1085/3787/files/handsome-man-using-perfume-on-black-background_480x480.jpg?v=1643821746"
             alt="Imagen"
-            className="w-full rounded-lg"
+            className="w-full h-full object-cover rounded-lg"
           />
         </div>
       </div>
