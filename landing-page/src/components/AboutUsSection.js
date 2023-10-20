@@ -24,7 +24,7 @@ function AboutUsSection() {
     // Cambiar la imagen cada 5 segundos
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    }, 3000);
 
     return () => {
       clearInterval(interval);
@@ -48,7 +48,7 @@ function AboutUsSection() {
               <img
                 src={images[currentImageIndex]}
                 alt="About Us"
-                className="w-full h-full object-fit-cover"
+                className="w-full h-full object-cover"
               />
             </a>
           </div>
